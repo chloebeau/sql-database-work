@@ -1,0 +1,9 @@
+#Scenario: Mr. Carl Merkel owns a small business called “CM Mobiles”. He wants to create a new table to store key information about customers.
+
+mysql> USE cm_devices;
+mysql> CREATE TABLE customers( usernameCHAR(9), fullName VARCHAR(100), email VARCHAR(255));
+#Shows customers' usernames, first and last names, and email addresses
+mysql> CREATE TABLE feedback ( feedbackID CHAR(8), feedbackID VARCHAR(100), comment TEXT(500));
+#Gives each piece of feedback a unique ID, shows positive or negative feedback, and then anything else the customer wanted to elaborate on in the text column
+
+#Learned how to work with string values in a database :) 
