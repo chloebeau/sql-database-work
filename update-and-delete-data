@@ -1,0 +1,22 @@
+#Scenario: Mr. Ericson wants to remove the customer record of Jimmy with ID number 3.
+
+mysql> CREATE DATABASE bookshop;
+
+mysql> USE bookshop;
+
+mysql> CREATE TABLE customers( customerID int, customerName VARCHAR(100), customerAddress VARCHAR(255));
+
+mysql> TRUNCATE TABLE customers;
+
+mysql> INSERT INTO customers (customerID, customerName, customerAddress) VALUES
+(1, 'Jack', '115 Old Street Belfast')
+(2, 'James', '24 Carlson Rd London')
+(4, 'Maria', '5 Fredrik Rd Bedford')
+(5 'Jade', '10 Copland Ave Portsmouth')
+(6 'Yasmine', '15 Fredrik Rd Bedford')
+(3,'Jimmy', '110 Copland Ave Portsmouth');
+
+mysql> DELETE FROM customers WHERE customerID = 3;
+
+
+#Practiced data deletion/updates within a database 
