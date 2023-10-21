@@ -1,0 +1,7 @@
+#Scenario: Create a database to store key information about CM Mobiles customers' addresses including customer ID, street, postcode and town name. 
+
+mysql> CREATE DATABASE cm_devices;
+mysql> USE cm_devices;
+mysql> CREATE TABLE address ( ID int not null, street VARCHAR(255), postcode VARCHAR(10), town VARCHAR(30) default "Harrow"); 
+
+#learned how to use the default constraint to enforce a specific default value
