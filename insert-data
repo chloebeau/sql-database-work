@@ -1,0 +1,11 @@
+#Scenario
+#Mr. John Ericson owns a small bookshop. 
+#He decides to build a digital database to maintain data about his customers electronically instead of using pen and paper. In this exercise, you’ll build the bookshop database.
+
+mysql> CREATE DATABASE bookshop;
+mysql> USE bookshop;
+mysql> CREATE TABLE customers ( customer ID INT, customerName VARCHAR(50), customerAddress VARCHAR(255));
+mysql> INSERT INTO customers (customer ID, customerName, customerAddress); VALUES (1, "Jack", "115 Old St Belfast");
+mysql> SELECT * FROM customers;
+
+#created a table in a database and inserted info into the table. 
