@@ -1,0 +1,10 @@
+#Scenario: Mr. Carl Merkel owns a small business named CM Mobiles that sells mobile devices. He wants to create a database to store key information about mobile devices.
+
+mysql > CREATE DATABASE cm_devices;
+mysql > USE cm_devices;
+mysql > CREATE TABLE devices ( deviceID int, deviceName varchar(50), price decimal);
+mysql> show tables;
+mysql> show columns from devices;
+mysql> CREATE TABLE stock (deviceID int, quantity int, totalCost decimal);
+
+#Successfully defined numeric data types in my databases, and created a table for "Mr. Carl Merkel" to use to easily keep track of his inventory  
