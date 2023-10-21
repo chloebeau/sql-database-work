@@ -1,0 +1,7 @@
+#Scenario: create a database to store key information about customers’ orders to generate invoices for customers including customer name, order date, quantity and total price
+
+mysql> CREATE DATABASE cm_devices;
+mysql> USE cm_devices;
+mysql> CREATE TABLE invoice ( customerID VARCHAR(50), orderDate DATE, quantity INT, price DECIMAL);
+
+#learned how to choose suitable data types for a variety of columns to store data as string, integer, date and decimal values
