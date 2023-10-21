@@ -1,0 +1,8 @@
+#Scenario
+#Mr. Erik Anderson has created a new football club for kids under 16 years old. He needs to create a table to store the players’ basic personal data including identity number, name and age.
+
+mysql> CREATE DATABASE football_club;
+mysql> USE football_club;
+mysql> CREATE TABLE players( playerID int, playerName VARCHAR(50), playerAge INT);
+
+#practiced how to create a table inside a database 
